@@ -1,11 +1,13 @@
 Oblig 2
 =======
-OsloMet brukernavn: 
+OsloMet brukernavn: Pibla9190
 
-GitHub brukernavn: 
+GitHub brukernavn: Piavelde
 
-Github repo URL: 
+Github repo URL: https://github.com/data1700-v23/oblig-1-Piavelde
 
-Fullt navn: 
+Fullt navn: Pia Blanco-Velde
 
 Kort beskrivelse av applikasjon (5-10 setninger):
+
+hhhhhhhhhhhh
