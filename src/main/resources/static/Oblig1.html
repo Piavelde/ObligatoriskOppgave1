@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Obligatorisk oppgave 1</title>
+    <script src="Oblig1.js"></script>
+</head>
+<body>
+<h1> Bestilling av kinobilletter</h1>
+
+<label for="filmer">Velg film </label>
+<select id="filmer">
+    <option value="Velg film her"> Velg film her </option>
+    <option value="Shrek"> Shrek </option>
+    <option value="Terkel i knipe"> Terkel i knipe </option>
+    <option value="Sonic 2"> Sonic 2 </option>
+</select>
+
+<br>
+<br>
+
+<label for="antallBilletter">Antall</label>
+<input id="antallBilletter" type="text">
+<span id="errorAntall" style="color: red"></span>
+
+<br>
+<br>
+
+<label for="fornavn">Fornavn</label>
+<input id="fornavn" type="text">
+<span id="errorFornavn" style="color: red"></span>
+
+<br>
+<br>
+
+<label for="etternavn">Etternavn</label>
+<input id="etternavn" type="text">
+<span id="errorEtternavn" style="color: red"></span>
+
+<br>
+<br>
+
+<label for="telefonnr">Telefonnr</label>
+<input id="telefonnr" type="text">
+<span id="errorTelefonnr" style="color: red"></span>
+
+<br>
+<br>
+
+<label for="epost">Epost</label>
+<input id="epost" type="text">
+<span id="errorEpost" style="color: red"></span>
+
+<br>
+<br>
+
+<button onclick="kjopBillett();">Kjøp billett</button>
+
+<h2>Alle billetter</h2>
+<div id="utskrift"></div>
+
+<br>
+<br>
+
+<button onclick="slettAlleBillettene()">Slett alle billettene</button>
+
+</label>
+</body>
+</html>
