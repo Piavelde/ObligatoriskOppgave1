@@ -10,4 +10,4 @@ Fullt navn: Pia Blanco-Velde
 
 Kort beskrivelse av applikasjon (5-10 setninger):
 
-hhhhhhhhhhhh
+JavaScript-applikasjon som registrerer kjøp av kinobilletter. 
