@@ -8,6 +8,7 @@
 <body>
 <h1> Bestilling av kinobilletter</h1>
 
+<!-- Dropdownvindu for valg av kinobilletter -->
 <label for="filmer">Velg film </label>
 <select id="filmer">
     <option value="Velg film her"> Velg film her </option>
@@ -16,9 +17,11 @@
     <option value="Sonic 2"> Sonic 2 </option>
 </select>
 
+<!-- Legger til to linjeskift mellom hver billett -->
 <br>
 <br>
 
+<!-- Input for antall billetter -->
 <label for="antallBilletter">Antall</label>
 <input id="antallBilletter" type="text">
 <span id="errorAntall" style="color: red"></span>
@@ -26,6 +29,7 @@
 <br>
 <br>
 
+<!-- Input for fornavn -->
 <label for="fornavn">Fornavn</label>
 <input id="fornavn" type="text">
 <span id="errorFornavn" style="color: red"></span>
@@ -33,6 +37,7 @@
 <br>
 <br>
 
+<!--Input for etternavn -->
 <label for="etternavn">Etternavn</label>
 <input id="etternavn" type="text">
 <span id="errorEtternavn" style="color: red"></span>
@@ -40,6 +45,7 @@
 <br>
 <br>
 
+<!--Input for telefonnummer -->
 <label for="telefonnr">Telefonnr</label>
 <input id="telefonnr" type="text">
 <span id="errorTelefonnr" style="color: red"></span>
@@ -47,6 +53,7 @@
 <br>
 <br>
 
+<!--Input for epostadresse -->
 <label for="epost">Epost</label>
 <input id="epost" type="text">
 <span id="errorEpost" style="color: red"></span>
@@ -54,6 +61,7 @@
 <br>
 <br>
 
+<!-- Knappen en trykker på for å kjøpe billett -->
 <button onclick="kjopBillett();">Kjøp billett</button>
 
 <h2>Alle billetter</h2>
@@ -62,6 +70,7 @@
 <br>
 <br>
 
+<!-- Knappen en trykker på for å slette alle billetter -->
 <button onclick="slettAlleBillettene()">Slett alle billettene</button>
 
 </body>

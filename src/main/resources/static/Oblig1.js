@@ -1,8 +1,9 @@
+//Oppretter her et array for å kunne lagre kjøpte billetter.
 let billettene = []; //
 
 function kjopBillett() {
 
-    //Lager variabler ved å hente inn value fra html taggene
+    //Henter verdier fra HTML-filen.
     let inputFilm = document.getElementById("filmer").value;
     let inputBilletter = document.getElementById("antallBilletter").value;
     let inputFornavn = document.getElementById("fornavn").value;
@@ -10,7 +11,9 @@ function kjopBillett() {
     let inputTlf = document.getElementById("telefonnr").value;
     let inputEpost = document.getElementById("epost").value;
 
-    const billett = { //Lager et objekt. Setter inn variablene over.
+
+    //Oppretter et objekt kalt "billett" med verdiene hentet fra HTML-filen.
+    const billett = {
         film: inputFilm,
         antall: inputBilletter,
         fornavn: inputFornavn,
@@ -20,6 +23,7 @@ function kjopBillett() {
 
     };
 
+    //If og else setninger som evaluerer inputverdiene og viser errormeldinger hvis det ikke blir skrevet inn noe.
     if (billett.antall === "") {
         document.getElementById("errorAntall").innerHTML = "Må skrive noe inn i antall";
 
@@ -47,10 +51,13 @@ function kjopBillett() {
         document.getElementById("errorEpost").innerHTML = "";
     }
 
+    //Legger til billett-objektet i arrayet.
     billettene.push(billett);
-    //Setter inn objektet vi laget inn i arrayet.
+
+    //Viser billettene.
     skrivUt();
 
+    //Dette sletter inputfeltene.
     document.getElementById("filmer").value = "";
     document.getElementById("antallBilletter").value = "";
     document.getElementById("fornavn").value = "";
@@ -59,16 +66,23 @@ function kjopBillett() {
     document.getElementById("epost").value = "";
 
 }
-function skrivUt() { //kjører gjennom en for-løkke for å skrive ut verdier vi har laget i objektet og satt i arrayet
+
+//
+function skrivUt() {
     let ut = "";
+    //For-løkke som går gjennom hver billett i arrayet.
     for (let i = 0; i < billettene.length; i++) {
         ut += billettene[i].film + " " + billettene[i].antall + " " + billettene[i].fornavn
             + " " + billettene[i].etternavn + " " + billettene[i].telefonnummer + " " + billettene[i].epost;
     }
+
+    //Viser strengen "ut" i "utskrift" div.
     document.getElementById("utskrift").innerHTML = ut;
 }
+
+//Tømmer arrayet.
 function slettAlleBillettene() {
-    billettene = []; //Tømmer arrayet
+    billettene = [];
     console.log(billettene);
     skrivUt();
 }
